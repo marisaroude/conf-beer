@@ -1,50 +1,96 @@
-# Welcome to your Expo app 👋
+# ConfBeer
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Aplicacion mobile construida con Expo + React Native para visualizar conferencias cerveceras.
 
-## Get started
+La app permite:
 
-1. Install dependencies
+- ver el listado de conferencias
+- abrir el detalle de cada conferencia
+- ver la ubicacion de la conferencia en un mapa
 
-   ```bash
-   npm install
-   ```
+## Stack
 
-2. Start the app
+- Expo
+- React Native
+- TypeScript
+- Expo Router (ruteo por archivos)
+- Expo SQLite (base de datos local)
+- React Native Maps
 
-   ```bash
-   npx expo start
-   ```
+## Requisitos
 
-In the output, you'll find options to open the app in a
+- Node.js 18+
+- npm
+- Expo Go o emulador Android/iOS
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+## Instalacion
 
 ```bash
-npm run reset-project
+npm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Ejecucion
 
-## Learn more
+```bash
+npm run start
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+Tambien disponibles:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+npm run android
+npm run ios
+npm run web
+```
 
-## Join the community
+## Estructura principal
 
-Join our community of developers creating universal apps.
+```text
+app/
+   _layout.tsx            # Stack de navegacion
+   index.tsx              # Listado de conferencias
+   conference/[id].tsx    # Detalle de conferencia
+   map.tsx                # Mapa con ubicacion
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+data/
+   conferences.json       # Fuente de datos
+
+database/
+   database.ts            # Inicializacion SQLite + consultas + sync
+
+types/
+   conference.ts          # Tipo Conference
+
+utils/
+   utils.ts               # Formateo de fechas/horas
+```
+
+## Flujo de datos
+
+1. Al abrir la pantalla principal, se ejecuta `initDatabase()`.
+2. Se crea la tabla `conferences` si no existe.
+3. Se sincroniza `data/conferences.json` con SQLite:
+    - inserta nuevas conferencias
+    - actualiza conferencias existentes
+    - elimina conferencias que ya no estan en el JSON
+4. La lista se consulta con `getAllConferences()`.
+5. El detalle se consulta con `getConferenceById(id)`.
+
+## Navegacion
+
+- `/` -> listado de conferencias
+- `/conference/[id]` -> detalle de una conferencia
+- `/map` -> mapa con marcador de la conferencia
+
+## Scripts
+
+- `npm run start`: inicia Expo
+- `npm run android`: abre en Android
+- `npm run ios`: abre en iOS
+- `npm run web`: abre en web
+- `npm run lint`: ejecuta lint
+
+## Notas
+
+- La base de datos es local al dispositivo/simulador.
+- Si modificas `data/conferences.json`, los cambios se aplican automaticamente al iniciar la app.

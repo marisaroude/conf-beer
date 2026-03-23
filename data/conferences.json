@@ -1,0 +1,157 @@
+{
+  "conferences": [
+    {
+      "id": 1,
+      "title": "El Arte del Lúpulo Argentino",
+      "speaker": "Martín Klug",
+      "brewery": "Klug Gebräu",
+      "description": "Descubrí cómo seleccionar y utilizar lúpulos argentinos para crear cervezas únicas con carácter local. Exploraremos variedades autóctonas y técnicas de dry hopping.",
+      "image": "https://images.unsplash.com/photo-1535958636474-b021ee887b13?w=400",
+      "startTime": "2026-03-15T10:00:00",
+      "endTime": "2026-03-15T11:30:00",
+      "location": {
+        "name": "Cervecería Klug Gebräu",
+        "latitude": -32.48205866649612,
+        "longitude": -58.25502533165962
+
+      }
+    },
+    {
+      "id": 2,
+      "title": "Cervezas de Campo: Del Grano a la Pinta",
+      "speaker": "Federico Ruiz",
+      "brewery": "Träctor",
+      "description": "Una mirada al proceso de elaboración artesanal desde la cosecha del grano hasta el producto final. Sustentabilidad y producción local.",
+      "image": "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=400",
+      "startTime": "2026-03-15T12:00:00",
+      "endTime": "2026-03-15T13:30:00",
+      "location": {
+        "name": "Cervecería Träctor",
+        "latitude": -32.48089976133614,
+        "longitude": -58.237947873988254
+      }
+    },
+    {
+      "id": 3,
+      "title": "IPAs del Nuevo Mundo",
+      "speaker": "Carolina Méndez",
+      "brewery": "7 Colinas",
+      "description": "Evolución de las India Pale Ales en Latinoamérica. Desde las West Coast hasta las Hazy, pasando por las Cold IPAs.",
+      "image": "https://images.unsplash.com/photo-1566633806327-68e152aaf26d?w=400",
+      "startTime": "2026-03-15T14:00:00",
+      "endTime": "2026-03-15T15:30:00",
+      "location": {
+        "name": "Cervecería 7 Colinas",
+        "latitude": -32.47969580780265,
+        "longitude": -58.2352425316596
+      }
+    },
+    {
+      "id": 4,
+      "title": "Fermentación Nórdica: Secretos Vikingos",
+      "speaker": "Erik Johansen",
+      "brewery": "Byggvir",
+      "description": "Técnicas ancestrales de fermentación escandinava aplicadas a la cerveza artesanal moderna. Levaduras Kveik y más.",
+      "image": "https://images.unsplash.com/photo-1571613316887-6f8d5cbf7ef7?w=400",
+      "startTime": "2026-03-15T16:00:00",
+      "endTime": "2026-03-15T17:30:00",
+      "location": {
+        "name": "Cervecería Byggvir",
+        "latitude": -32.48687732548482,
+        "longitude": -58.23348921816633
+      }
+    },
+    {
+      "id": 5,
+      "title": "Stouts y Porters: El Lado Oscuro",
+      "speaker": "Alejandro Vega",
+      "brewery": "Baws",
+      "description": "Profundizamos en los estilos oscuros británicos e irlandeses. Maltas tostadas, café, chocolate y técnicas de añejamiento.",
+      "image": "https://images.unsplash.com/photo-1608270586620-248524c67de9?w=400",
+      "startTime": "2026-03-16T10:00:00",
+      "endTime": "2026-03-16T11:30:00",
+      "location": {
+        "name": "Cervecería Baws",
+        "latitude": -32.48559962245384, 
+        "longitude": -58.232866731659556
+      }
+    },
+    {
+      "id": 6,
+      "title": "Cervezas Sour: Acidez Controlada",
+      "speaker": "Luciana Torres",
+      "brewery": "Lagash",
+      "description": "El mundo de las cervezas ácidas: Berliner Weisse, Gose, Lambics y Flanders. Control de pH y bacterias lácticas.",
+      "image": "https://images.unsplash.com/photo-1587139223877-04cb899fa3e8?w=400",
+      "startTime": "2026-03-16T12:00:00",
+      "endTime": "2026-03-16T13:30:00",
+      "location": {
+        "name": "Cervecería Lagash",
+        "latitude": -32.4799492626789, 
+        "longitude": -58.23374213165959
+      }
+    },
+    {
+      "id": 7,
+      "title": "La Épica de las Cervezas Vikingas",
+      "speaker": "Ragnar Stein",
+      "brewery": "Drakkar",
+      "description": "Historia y recreación de recetas vikingas. Ingredientes históricos como el bog myrtle y técnicas tradicionales.",
+      "image": "https://images.unsplash.com/photo-1523567353-71ea3a982997?w=400",
+      "startTime": "2026-03-16T14:00:00",
+      "endTime": "2026-03-16T15:30:00",
+      "location": {
+        "name": "Cervecería Drakkar",
+        "latitude": -32.480412063516326, 
+        "longitude": -58.23385050097462
+      }
+    },
+    {
+      "id": 8,
+      "title": "Barrel Aging: Madera y Tiempo",
+      "speaker": "Martín Klug",
+      "brewery": "Klug Gebrau",
+      "description": "El arte de añejar cervezas en barricas. Selección de maderas, tiempos de guarda y blending de añadas.",
+      "image": "https://images.unsplash.com/photo-1584225064785-c62a8b43d148?w=400",
+      "startTime": "2026-03-16T16:00:00",
+      "endTime": "2026-03-16T17:30:00",
+      "location": {
+        "name": "Cervecería Klug Gebräu",
+        "latitude": -32.48205866649612,
+        "longitude": -58.25502533165962
+
+      }
+    },
+    {
+      "id": 9,
+      "title": "Lagers Artesanales: Paciencia y Precisión",
+      "speaker": "Hans Mueller",
+      "brewery": "7 Colinas",
+      "description": "Dominando la fermentación baja. Pilsners, Helles, Märzen y la importancia del control de temperatura.",
+      "image": "https://images.unsplash.com/photo-1600788886242-5c96aabe3757?w=400",
+      "startTime": "2026-03-17T10:00:00",
+      "endTime": "2026-03-17T11:30:00",
+      "location": {
+        "name": "Cervecería 7 Colinas",
+        "latitude": -32.4830123456789,
+        "longitude": -58.23456789012345
+      }
+    },
+    {
+      "id": 10,
+      "title": "El Futuro de la Cerveza Artesanal",
+      "speaker": "Panel de Cerveceros",
+      "brewery": "Tractor, Baws, Lagash",
+      "description": "Mesa redonda sobre tendencias, desafíos y oportunidades del mercado cervecero artesanal en Argentina y la región.",
+      "image": "https://images.unsplash.com/photo-1575037614876-c38a4c44f5bd?w=400",
+      "startTime": "2026-03-17T12:00:00",
+      "endTime": "2026-03-17T14:00:00",
+      "location": {
+        "name": "Cervecería Lagash",
+        "latitude": -32.4799492626789, 
+        "longitude": -58.23374213165959
+      }
+    }
+  ]
+}
+
